@@ -115,7 +115,7 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Alertas actuales</a></li>
+                <li><a href="{% url 'gestionar_alertas' %}"><i class="fa fa-circle-o"></i> Alertas actuales</a></li>
                 <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Gestionar alertas</a></li>
               </ul>
             </li>
@@ -174,9 +174,9 @@
                 <div class="box-body">
                   	<div class="row">
 	                  	<div class="col-md-12">
-		                          <!--Contenido-->
-                              <h3>Contenido</h3>
-		                          <!--Fin Contenido-->
+		                       {% block body_block %}
+                                
+                                {% endblock %}
                            </div>
                         </div>
 
